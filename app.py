@@ -22,4 +22,4 @@ def survival():
         return "<h1 style='color:green'>Good Quality Of Wine</h1>"
     else:
         return "<h1 style='color:red'>Good Quality Of Wine</h1>"
-app.run(host="0.0.0.0",debug=True,port=8080)
+app.run(host="0.0.0.0",debug=True,port=8000)
