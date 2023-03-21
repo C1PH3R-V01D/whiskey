@@ -17,7 +17,7 @@ def survival():
     sulphates=float(request.form.get("sulphates"))	
     alcohol=float(request.form.get("alcohol"))
 
-    result=model.predict(np.array(fixed_acidity,volatile_acidity,citric_acid,chlorides,total_sulfur_dioxide,density,sulphates,alcohol)reshape(1,8))
+    result=model.predict(np.array(fixed_acidity,volatile_acidity,citric_acid,chlorides,total_sulfur_dioxide,density,sulphates,alcohol).reshape(1,8))
     if result[0]==1:
         return "<h1 style='color:green'>Good Quality Of Wine</h1>"
     else:
